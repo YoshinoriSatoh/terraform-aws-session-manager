@@ -1,5 +1,5 @@
 output "session_manager_policy" {
-  value = aws_iam_policy.session-manager
+  value = aws_iam_policy.session_manager
 }
 
 output "logging_bucket" {
