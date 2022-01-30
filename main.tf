@@ -9,7 +9,7 @@ data "aws_region" "current" {}
 
 # Session ManagerのIAM Policyは以下を参照
 # https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html
-resource "aws_iam_policy" "session-manager" {
+resource "aws_iam_policy" "session_manager" {
   name        = "${var.tf.fullname}-session-manager"
   description = "${var.tf.fullname}-session-manager"
   policy = jsonencode({

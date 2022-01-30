@@ -25,7 +25,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [aws_cloudwatch_log_group.logging](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/cloudwatch_log_group) | resource |
-| [aws_iam_policy.session-manager](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/iam_policy) | resource |
+| [aws_iam_policy.session_manager](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/iam_policy) | resource |
 | [aws_s3_bucket.logging](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/s3_bucket) | resource |
 | [aws_s3_bucket_public_access_block.logging](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/data-sources/caller_identity) | data source |
