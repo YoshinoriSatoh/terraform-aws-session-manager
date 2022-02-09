@@ -4,10 +4,10 @@ output "session_manager_policy" {
 
 output "logging_bucket" {
   description = "logging bucket"
-  value = aws_s3_bucket.logging
+  value       = aws_s3_bucket.logging
 }
 
 output "aws_cloudwatch_log_group" {
   description = "cloudwatch log group"
-  value = aws_cloudwatch_log_group.logging
+  value       = aws_cloudwatch_log_group.logging
 }
