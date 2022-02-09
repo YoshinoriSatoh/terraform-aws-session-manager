@@ -60,7 +60,8 @@ resource "aws_cloudwatch_log_group" "logging" {
 }
 
 resource "aws_s3_bucket" "logging" {
-  bucket = "${replace(var.tf.fullname, "_", "-")}-session-manager-logs"
+  bucket = "${var.tf.fullname}-session-manager-logs"
+  force_destroy = var.in_development
 
   server_side_encryption_configuration {
     rule {
