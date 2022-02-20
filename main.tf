@@ -62,12 +62,14 @@ resource "aws_cloudwatch_log_group" "logging" {
 resource "aws_s3_bucket" "logging" {
   bucket        = "${var.tf.fullname}-session-manager-logs"
   force_destroy = var.in_development
+}
 
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        sse_algorithm = "AES256"
-      }
+resource "aws_s3_bucket_server_side_encryption_configuration" "logging" {
+  bucket = aws_s3_bucket.logging.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
     }
   }
 }
